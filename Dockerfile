@@ -13,5 +13,5 @@ RUN apt-get install -y wget && \
 #ENTRYPOINT /usr/local/bin/dumb-init
 ADD etc/supervisord.conf /etc/supervisord.conf
 ADD opt/qnib/supervisor/bin/start.sh /opt/qnib/supervisor/bin/
-CMD ["opt/qnib/supervisor/bin/start.sh", "-n"]
+CMD ["/opt/qnib/supervisor/bin/start.sh", "-n"]
 
