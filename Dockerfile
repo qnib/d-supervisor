@@ -1,4 +1,4 @@
-FROM debian:jessie
+FROM debian:8.9
 MAINTAINER "Christian Kniep <christian@qnib.org>"
 
 RUN echo "2015-10-27.1";apt-get update && \
